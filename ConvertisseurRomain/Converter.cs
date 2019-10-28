@@ -46,17 +46,5 @@ namespace ConvertisseurRomain
             
             return chiffreRomain.ToString();
         }
-
-        public static int ValueToTreat(int value)
-        {
-            for (int i = 0; i < TuplesCasParticuliers.Length; i++)
-            {
-                if (TuplesCasParticuliers[i].Item1 == value)
-                {
-                    return i;
-                }
-            }
-            return -1;
-        }
     }
 }
