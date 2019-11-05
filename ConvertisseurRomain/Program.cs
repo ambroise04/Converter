@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConvertisseurRomain
+namespace DecimalToRoman
 {
     class Program
     {

@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ConvertisseurRomain\ConvertisseurRomain.csproj" />
+    <ProjectReference Include="..\ConvertisseurRomain\DecimalToRoman.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ConvertisseurRomain
+namespace DecimalToRoman
 {
     public class Converter
     {
@@ -28,12 +28,11 @@ namespace ConvertisseurRomain
         {
             StringBuilder chiffreRomain = new StringBuilder();
             int i = 0;
-            while (chiffre > 0 &&  i < TuplesCasParticuliers.Length)
+            while (chiffre > 0 && i < TuplesCasParticuliers.Length)
             {
-                int temp = 0;
                 if (chiffre >= TuplesCasParticuliers[i].Item1)
                 {
-                    temp = (Int32)(chiffre / TuplesCasParticuliers[i].Item1);
+                    int temp = (Int32)(chiffre / TuplesCasParticuliers[i].Item1);
                     chiffre = (Int32)(chiffre % TuplesCasParticuliers[i].Item1);
 
                     for (int j = 0; j < temp; j++)
@@ -43,7 +42,7 @@ namespace ConvertisseurRomain
                 }
                 i++;
             }
-            
+
             return chiffreRomain.ToString();
         }
     }

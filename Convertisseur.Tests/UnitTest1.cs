@@ -1,4 +1,4 @@
-using ConvertisseurRomain;
+using DecimalToRoman;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Convertisseur.Tests
@@ -23,5 +23,5 @@ namespace Convertisseur.Tests
 
             Assert.AreEqual(result, sut);
         }
-    }
+    }    
 }
